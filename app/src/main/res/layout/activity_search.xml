@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.littleprincess.booklisting.SearchActivity"
+    android:orientation="vertical"
+    android:background="@color/main_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/big_padding"
+        android:paddingBottom="@dimen/big_padding"
+        android:background="@color/main_search_color">
+
+        <EditText
+            android:id="@+id/advanced_search_text"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/big_padding"
+            android:layout_marginStart="@dimen/big_padding"
+            android:layout_marginBottom="@dimen/big_padding"
+            android:layout_marginEnd="@dimen/big_padding"
+            android:maxLines="1"
+            android:textColor="@color/book_details_color"
+            android:textSize="@dimen/headline_size"
+            android:textColorHint="@color/book_details_color"
+            android:hint="@string/edit_text_hint" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/big_padding"
+            android:text="@string/search_button"
+            android:textSize="@dimen/text_search_size"
+            android:layout_marginEnd="@dimen/big_padding"
+            android:layout_marginTop="@dimen/big_padding"
+            android:layout_marginBottom="@dimen/big_padding"
+            android:padding="@dimen/small_padding"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="center_vertical"
+            android:backgroundTint="@color/book_details_color"
+            />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/search_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginStart="@dimen/big_padding"
+                android:layout_marginTop="@dimen/padding_x_large"
+                android:layout_marginEnd="@dimen/big_padding"
+                android:text="@string/search_by_text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/headline_size" />
+
+            <Spinner
+                android:id="@+id/filter_spinner"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/search_by"
+                android:layout_marginEnd="@dimen/padding_x_large"
+                android:layout_marginStart="@dimen/padding_x_large"
+                android:spinnerMode="dropdown" />
+
+
+            <TextView
+                android:id="@+id/filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@id/filter_spinner"
+                android:layout_marginBottom="@dimen/small_padding"
+                android:layout_marginEnd="@dimen/padding_x_large"
+                android:layout_marginTop="@dimen/padding_x_large"
+                android:text="@string/filter_text"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/headline_size" />
+
+
+            <Spinner
+                android:id="@+id/search_by_spinner"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_by"
+                android:layout_marginEnd="@dimen/padding_x_large"
+                android:layout_alignStart="@id/search_by"
+                android:spinnerMode="dropdown"
+                android:gravity="center"/>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

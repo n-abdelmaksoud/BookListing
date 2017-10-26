@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerItem.DropDownItem</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="editTextStyle">@style/CustomEditTextStyle</item>
+        <item name="android:ratingBarStyle">@style/RatingBarCustomStyle</item>
+    </style>
+
+    <style name="RatingBarCustomStyle" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:width">@dimen/image_width</item>
+    </style>
+
+    <style name="SpinnerItem" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:textSize">@dimen/spinner_text_size</item>
+    </style>
+
+    <style name="SpinnerItem.DropDownItem" parent="@android:style/Widget.DropDownItem.Spinner">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/spinner_text_size</item>
+    </style>
+
+    <style name="CustomEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:singleLine">true</item>
+    </style>
+
+</resources>

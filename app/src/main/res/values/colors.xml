@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#642C18</color>
+    <color name="colorPrimaryDark">#442418</color>
+    <color name="colorAccent">#41C300</color>
+    <color name="main_search_color">#df7d19</color>
+    <color name="main_background">#FFFFFF</color>
+    <color name="rating_bar_background_color">#D8E0E2</color>
+    <color name="book_details_color">#FFFFDB</color>
+
+</resources>

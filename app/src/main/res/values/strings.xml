@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Book Listing</string>
+    <string name="search_results">Search Results</string>
+
+    <string name="enter_book_name_toast">Enter Keyword to search, please</string>
+    <string name="no_internet_connection">No Internet Connection Found</string>
+    <string name="no_results">No matches found</string>
+
+    <string name="filter_text">Filter</string>
+    <string name="search_by_text">Search By</string>
+    <string name="search_button">Search</string>
+    <string name="edit_text_hint">Enter Keyword</string>
+
+    <string-array name="filter_menu">
+        <item>All Books</item>
+        <item>Partial Viewable Books</item>
+        <item>Full Viewable Books</item>
+        <item>Free Google eBooks</item>
+        <item>Paid Google eBooks</item>
+        <item>Google eBooks</item>
+    </string-array>
+
+    <string-array name="search_by_menu">
+        <item>General</item>
+        <item>Book Title</item>
+        <item>Author</item>
+        <item>Publisher</item>
+        <item>Subject</item>
+    </string-array>
+</resources>
